@@ -580,8 +580,13 @@ async def unsupported(_, message):
 
 # =========================================================
 # 𝐑𝐔𝐍
-# =========================================================
+# ==================================================
 
-print("🚀 𝐁𝐎𝐓 𝐈𝐒 𝐑𝐔𝐍𝐍𝐈𝐍𝐆...")
+print("🚀 BOT IS RUNNING...")
 
-app.run()
+try:
+    app.run()
+except Exception as e:
+    import traceback
+    traceback.print_exc()
+    print(e)
